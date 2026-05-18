@@ -296,6 +296,30 @@ body {
 #pedagogic-text ol, #pedagogic-text ul { padding-left: 18px; margin-bottom: 8px; }
 #pedagogic-text li { margin-bottom: 4px; }
 
+/* Step lists (numbered) and definition lists in knowledge boxes */
+#pedagogic-text .step-list,
+#pedagogic-text .def-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#pedagogic-text .step-list li,
+#pedagogic-text .def-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  line-height: 1.65;
+  margin-bottom: 0;
+}
+#pedagogic-text .step-list li:first-child,
+#pedagogic-text .def-list li:first-child {
+  padding-top: 2px;
+}
+#pedagogic-text .step-list li:last-child,
+#pedagogic-text .def-list li:last-child {
+  border-bottom: none;
+  padding-bottom: 2px;
+}
+
 /* ── INTERACTION AREA ───────────────────────────────── */
 
 #interaction-area {

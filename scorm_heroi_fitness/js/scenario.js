@@ -1180,22 +1180,38 @@ const UI = {
 
   _md: function (t) {
     if (!t) return '';
+    function inl(s) {
+      return s
+        .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+        .replace(/\*([^*]+)\*/g, '<em>$1</em>');
+    }
     return t.split('\n\n').map(function (para) {
       para = para.trim();
       if (!para) return '';
-      para = para.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
-      para = para.replace(/\*([^*]+)\*/g, '<em>$1</em>');
-      if (/^\d+\.\s/.test(para)) {
-        return '<ol>' + para.split('\n').filter(Boolean).map(function (l) {
-          return '<li>' + l.replace(/^\d+\.\s*/, '').replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>') + '</li>';
-        }).join('') + '</ol>';
+      var lines = para.split('\n');
+      var first = lines[0].trim();
+      // Ordered list: "1. " or "**1. " or "**1) " prefixes
+      if (/^(\*\*)?[1-9]\d*[.)]\s/.test(first)) {
+        return '<ol class="step-list">' +
+          lines.filter(Boolean).map(function (l) {
+            return '<li>' + inl(l.trim()) + '</li>';
+          }).join('') + '</ol>';
       }
-      if (/^[-•]\s/.test(para)) {
-        return '<ul>' + para.split('\n').filter(Boolean).map(function (l) {
-          return '<li>' + l.replace(/^[-•]\s*/, '').replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>') + '</li>';
-        }).join('') + '</ul>';
+      // Unordered bullet: "- " or "• "
+      if (/^[-•]\s/.test(first)) {
+        return '<ul>' +
+          lines.filter(Boolean).map(function (l) {
+            return '<li>' + inl(l.trim().replace(/^[-•]\s*/, '')) + '</li>';
+          }).join('') + '</ul>';
       }
-      return '<p>' + para + '</p>';
+      // Definition list: multiple lines each starting with **Label**
+      if (lines.length > 1 && /^\*\*[^*]/.test(first)) {
+        return '<ul class="def-list">' +
+          lines.filter(Boolean).map(function (l) {
+            return '<li>' + inl(l.trim()) + '</li>';
+          }).join('') + '</ul>';
+      }
+      return '<p>' + inl(para) + '</p>';
     }).join('');
   }
 };

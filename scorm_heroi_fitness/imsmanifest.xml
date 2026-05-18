@@ -24,6 +24,11 @@
       <file href="css/style.css"/>
       <file href="js/scorm.js"/>
       <file href="js/scenario.js"/>
+      <file href="assets/img_01.svg"/>
+      <file href="assets/img_02.svg"/>
+      <file href="assets/img_03.svg"/>
+      <file href="assets/img_04.svg"/>
+      <file href="assets/img_05.svg"/>
     </resource>
   </resources>
 </manifest>

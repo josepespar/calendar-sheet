@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700">
+  <defs>
+    <linearGradient id="bg5" x1="0" y1="0" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#1A0D0D"/>
+      <stop offset="100%" stop-color="#1A1A2E"/>
+    </linearGradient>
+    <linearGradient id="lp5" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.72"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="700" fill="url(#bg5)"/>
+
+  <!-- Meeting room / table suggestion -->
+  <ellipse cx="1200" cy="500" rx="350" ry="60" fill="#FFFFFF" opacity="0.03"/>
+  <!-- Room corner lines -->
+  <line x1="800" y1="0"    x2="800"  y2="700" stroke="#FFFFFF" stroke-width="1" opacity="0.03"/>
+  <line x1="800" y1="500"  x2="1600" y2="500" stroke="#FFFFFF" stroke-width="1" opacity="0.03"/>
+  <!-- Tension arc between characters -->
+  <path d="M1010,280 Q1190,200 1370,280" fill="none" stroke="#FF6B35" stroke-width="3" opacity="0.1" stroke-dasharray="12,8"/>
+
+  <rect width="820" height="700" fill="url(#lp5)"/>
+
+  <!-- FitCore wordmark -->
+  <text x="60" y="80" font-family="system-ui,-apple-system,sans-serif" font-size="46" font-weight="900">
+    <tspan fill="#FFFFFF">FIT</tspan><tspan fill="#FF6B35">CORE</tspan>
+  </text>
+  <text x="60" y="110" font-family="system-ui,-apple-system,sans-serif" font-size="17" fill="#666666" letter-spacing="4">CENTRE DE FITNESS</text>
+  <rect x="60" y="145" width="180" height="4" rx="2" fill="#FF6B35"/>
+  <text x="60" y="195" font-family="system-ui,-apple-system,sans-serif" font-size="18" fill="#FF6B35" font-weight="700" letter-spacing="3">LA PROVA SUPREMA</text>
+
+  <text x="60" y="272" font-family="system-ui,-apple-system,sans-serif" font-size="64" font-weight="900" fill="#FFFFFF">La conversa</text>
+  <text x="60" y="350" font-family="system-ui,-apple-system,sans-serif" font-size="64" font-weight="900" fill="#FFFFFF">difícil</text>
+  <text x="60" y="420" font-family="system-ui,-apple-system,sans-serif" font-size="24" fill="#AAAAAA">Assertivitat i gestió emocional</text>
+
+  <!-- Harry avatar (left side of conversation) -->
+  <circle cx="980" cy="270" r="95" fill="#4A90D9"/>
+  <text x="980" y="288" font-family="system-ui,-apple-system,sans-serif" font-size="54" font-weight="900" fill="#FFFFFF" text-anchor="middle">H</text>
+  <text x="980" y="393" font-family="system-ui,-apple-system,sans-serif" font-size="26" fill="#4A90D9" font-weight="700" text-anchor="middle">HARRY</text>
+  <text x="980" y="422" font-family="system-ui,-apple-system,sans-serif" font-size="18" fill="#888888" text-anchor="middle">Assertivitat</text>
+
+  <!-- VS / tension dot -->
+  <circle cx="1190" cy="270" r="24" fill="#FF6B35" opacity="0.7"/>
+  <text x="1190" y="278" font-family="system-ui,-apple-system,sans-serif" font-size="18" font-weight="900" fill="#FFFFFF" text-anchor="middle">↔</text>
+
+  <!-- Jordi avatar (right side) -->
+  <circle cx="1400" cy="270" r="95" fill="#E67E22"/>
+  <text x="1400" y="288" font-family="system-ui,-apple-system,sans-serif" font-size="54" font-weight="900" fill="#FFFFFF" text-anchor="middle">Jo</text>
+  <text x="1400" y="393" font-family="system-ui,-apple-system,sans-serif" font-size="26" fill="#E67E22" font-weight="700" text-anchor="middle">JORDI</text>
+  <text x="1400" y="422" font-family="system-ui,-apple-system,sans-serif" font-size="18" fill="#888888" text-anchor="middle">Triatleta · Crític</text>
+
+  <rect x="0" y="668" width="1600" height="32" fill="#FF6B35" opacity="0.15"/>
+  <text x="800" y="689" font-family="system-ui,-apple-system,sans-serif" font-size="16" fill="#FF6B35" text-anchor="middle" letter-spacing="2">HABILITATS SOCIALS PER A ENTRENADORS · EL VIATGE DE L'HEROI</text>
+</svg>

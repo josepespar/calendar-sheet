@@ -2,8 +2,9 @@
 <html lang="ca">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>El Viatge de l'Heroi – Habilitats Socials per a Entrenadors · FitCore</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>El Viatge de l'Heroi – Habilitats Socials · FitCore</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -12,24 +13,31 @@
 
   <!-- ══ HEADER ══════════════════════════════════════════ -->
   <header id="header">
-    <div id="header-left">
-      <span id="stage-label">El Món Ordinari</span>
-      <div id="scene-title">Carregant...</div>
+    <div id="header-row1">
+      <div id="header-left">
+        <span id="stage-label">El Món Ordinari</span>
+        <div id="scene-title">Carregant...</div>
+      </div>
+      <div id="header-right">
+        <span id="score-display">0 pts</span>
+        <button id="map-toggle-btn" aria-label="Mapa del viatge">🗺</button>
+      </div>
     </div>
-    <div id="header-right">
-      <span id="score-display">Puntuació: 0</span>
-      <button id="map-toggle-btn" aria-label="Mapa del viatge">🗺 Mapa</button>
-    </div>
-    <div id="progress-container" style="width:100%">
+    <div id="progress-container">
       <div id="progress-bar-track">
         <div id="progress-bar-fill"></div>
       </div>
-      <span id="progress-label">0/13 escenes</span>
+      <span id="progress-label">0/28</span>
     </div>
   </header>
 
   <!-- ══ SCENE AREA ═══════════════════════════════════════ -->
   <main id="scene-area">
+
+    <!-- Imatge de l'escena -->
+    <div id="scene-image-container" style="display:none">
+      <img id="scene-image" alt="" loading="eager">
+    </div>
 
     <!-- Personatge -->
     <div id="character-block">
@@ -54,14 +62,14 @@
       <div id="pedagogic-text"></div>
     </div>
 
-    <!-- Interacció (decisions / checklist / ordeal / epilogue) -->
+    <!-- Interacció -->
     <div id="interaction-area"></div>
 
   </main>
-</div><!-- /#app -->
+</div>
 
 <!-- ══ FEEDBACK OVERLAY ══════════════════════════════════ -->
-<div id="feedback-overlay" role="dialog" aria-modal="true" aria-label="Feedback de la decisió">
+<div id="feedback-overlay" role="dialog" aria-modal="true" aria-label="Resultat de la decisió">
   <div id="feedback-modal">
     <div id="feedback-icon" class="feedback-icon">✓</div>
     <div id="feedback-pts">+10 punts</div>
@@ -71,23 +79,19 @@
 </div>
 
 <!-- ══ JOURNEY MAP OVERLAY ══════════════════════════════ -->
-<div id="map-overlay" role="dialog" aria-modal="true" aria-label="Mapa del viatge de l'heroi">
+<div id="map-overlay" role="dialog" aria-modal="true" aria-label="Mapa del viatge">
   <div id="map-modal">
     <div id="map-modal-header">
       <span id="map-modal-title">🗺 El Viatge de l'Heroi</span>
-      <button id="map-close-btn" aria-label="Tancar mapa">✕</button>
+      <button id="map-close-btn" aria-label="Tancar">✕ Tancar</button>
     </div>
-    <div id="journey-map-content">
-      <!-- Rendered by UI.updateJourneyMap -->
-    </div>
+    <div id="journey-map-content"></div>
   </div>
 </div>
 
-<!-- ══ SCRIPTS ═══════════════════════════════════════════ -->
 <script src="js/scorm.js"></script>
 <script src="js/scenario.js"></script>
 <script>
-  // Journey map toggle
   document.getElementById('map-toggle-btn').addEventListener('click', function () {
     document.getElementById('map-overlay').style.display = 'flex';
   });
@@ -97,22 +101,12 @@
   document.getElementById('map-overlay').addEventListener('click', function (e) {
     if (e.target === this) this.style.display = 'none';
   });
-
-  // Feedback overlay close on backdrop click
-  document.getElementById('feedback-overlay').addEventListener('click', function (e) {
-    if (e.target === this) {
-      // Do not close feedback on backdrop – force button click
-    }
-  });
-
-  // Keyboard: Escape closes overlays
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') {
       document.getElementById('map-overlay').style.display = 'none';
+      document.getElementById('feedback-overlay').style.display = 'none';
     }
   });
-
-  // Boot
   window.addEventListener('DOMContentLoaded', function () {
     Engine.init();
   });

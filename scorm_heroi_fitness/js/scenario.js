@@ -1,7 +1,7 @@
 /* ============================================================
    SCENARIO – El Viatge de l'Heroi · FitCore v2
    ~30 escenes · Quiz + Decisions · Puntuació màxima: 100 pts
-   Imatges a assets/: img_01.jpg…img_05.jpg
+   Imatges a assets/: scene_01…scene_06.webp
    ============================================================ */
 
 const CHARACTERS = {
@@ -37,7 +37,7 @@ const scenes = {
   scene_01: {
     id: 'scene_01', etapa: 'El Món Ordinari', personatge: 'harry',
     tipus: 'text_block', titol: 'Benvingut a FitCore',
-    imatge: 'assets/img_01.svg',
+    imatge: 'assets/scene_01.webp',
     narracio: `Harry té 18 anys, el títol de tècnic esportiu acabat de plastificar i una motxilla plena de blocs de notes sobre periodització. Avui és el seu primer dia com a entrenador a FitCore, el centre de fitness més complet del barri.
 
 La recepció és moderna i acollent. Música suau, aroma de cafè de la màquina del fons, clients que entren i surten amb les bosses al muscle. Harry s'atura a l'entrada i respira fons. Sap perfectament com dissenyar un programa d'entrenament. El que no sap, però, és com parlar amb la gent quan les coses es compliquen.`,
@@ -52,7 +52,7 @@ La recepció és moderna i acollent. Música suau, aroma de cafè de la màquina
   scene_02: {
     id: 'scene_02', etapa: 'El Món Ordinari', personatge: 'narracio',
     tipus: 'text_block', titol: 'L\'equip: la Hanna i en Jack',
-    imatge: 'assets/img_01.svg',
+    imatge: 'assets/scene_01.webp',
     narracio: `El director Miquel presenta Harry a l'equip. La **Hanna** porta set anys al centre. Quan li estreny la mà, mira Harry als ulls i li diu: "Qualsevol cosa que necessitis, estic aquí." La seva postura és oberta, el somriure és sincer.
 
 En **Jack** porta deu anys. La seva salutació és breu, quasi mecànica. "Benvingut." Dues síl·labes i ja ha donat l'esquena. Els clients el respecten per la seva experiència tècnica, però alguns li diuen que és difícil d'apropar.`,
@@ -67,7 +67,7 @@ En **Jack** porta deu anys. La seva salutació és breu, quasi mecànica. "Benvi
   scene_03: {
     id: 'scene_03', etapa: 'El Món Ordinari', personatge: 'narracio',
     tipus: 'quiz', titol: 'Comprensió: l\'equip de FitCore',
-    imatge: 'assets/img_03.svg',
+    imatge: 'assets/scene_03.webp',
     narracio: `Reflexiona sobre el que acabes de llegir sobre la Hanna i en Jack.`,
     dialeg: null,
     contingut_pedagogic: null,
@@ -83,7 +83,7 @@ En **Jack** porta deu anys. La seva salutació és breu, quasi mecànica. "Benvi
   scene_04: {
     id: 'scene_04', etapa: 'La Crida a l\'Aventura', personatge: 'miquel',
     tipus: 'text_block', titol: 'La queixa de la Maria',
-    imatge: 'assets/img_02.svg',
+    imatge: 'assets/scene_02.webp',
     narracio: `Dues hores después del primer dia. El director Miquel crida Harry al despatx. "La Maria Puig ha deixat una queixa formal. Té 55 anys, porta tres mesos al centre i diu que se sent invisible: ningú li pregunta com es troba, li expliquen exercicis sense adaptar-los i no l'escolten."
 
 Miquel mostra la pantalla on apareix el formulari de queixa. La Maria ha escrit: "Em sento com si fos un número, no una persona. He decidit valorar si continuo al centre."`,
@@ -98,7 +98,7 @@ Miquel mostra la pantalla on apareix el formulari de queixa. La Maria ha escrit:
   scene_05: {
     id: 'scene_05', etapa: 'La Crida a l\'Aventura', personatge: 'miquel',
     tipus: 'decision_scenario', titol: 'Com respon Harry a la crida?',
-    imatge: 'assets/img_04.svg',
+    imatge: 'assets/scene_04.webp',
     narracio: `Harry té tres opcions davant. El rellotge avança. La Maria espera al saló.`,
     dialeg: { personatge: 'harry', text: '"Això és real. No és un exercici. Una persona real espera una resposta real."' },
     contingut_pedagogic: null,
@@ -124,7 +124,7 @@ Miquel mostra la pantalla on apareix el formulari de queixa. La Maria ha escrit:
   scene_06: {
     id: 'scene_06', etapa: 'Rebuig de la Crida', personatge: 'jack',
     tipus: 'text_block', titol: 'Jack gestiona la Maria',
-    imatge: 'assets/img_02.svg',
+    imatge: 'assets/scene_06.webp',
     narracio: `Harry observa des del passadís. En Jack s'asseu davant de la Maria amb els braços creuats. Sense preguntar res, comença: "Mira, tots els entrenadors aquí sabem el que fem. Si et donava aquells exercicis, era perquè eren els correctes. Potser t'has d'esforçar una mica més."
 
 La Maria encongeix els muscles. En Jack s'aixeca: "Si no n'estàs satisfeta, parla amb direcció." La Maria queda sola, amb els ulls humits.`,
@@ -139,7 +139,7 @@ La Maria encongeix els muscles. En Jack s'aixeca: "Si no n'estàs satisfeta, par
   scene_07: {
     id: 'scene_07', etapa: 'La Trobada amb el Mentor', personatge: 'hanna',
     tipus: 'worked_example', titol: 'La lliçó de la Hanna',
-    imatge: 'assets/img_03.svg',
+    imatge: 'assets/scene_03.webp',
     narracio: `La Hanna porta Harry a la sala d'entrenadors i li prepara un cafè. Parla amb calma: "Cada queixa d'un client és un regal. Ens diu on falla la comunicació. La Maria no es queixa dels exercicis: es queixa de no sentir-se vista."
 
 A continuació modela una conversa amb "la Maria" en role-play. S'asseu al costat de Harry (no enfront), manté contacte visual suau, capeja el cap, i quan la Maria acaba de parlar, reformula: "El que m'estàs dient és que sents que no ens hem pres el temps per entendre el que tu necessites. T'escolto."`,
@@ -158,7 +158,7 @@ A continuació modela una conversa amb "la Maria" en role-play. S'asseu al costa
   scene_08: {
     id: 'scene_08', etapa: 'La Trobada amb el Mentor', personatge: 'hanna',
     tipus: 'quiz', titol: 'Comprensió: escolta activa',
-    imatge: 'assets/img_03.svg',
+    imatge: 'assets/scene_03.webp',
     narracio: `La Hanna et fa una pregunta per assegurar-se que has entès el pas 4 del model.`,
     dialeg: null,
     contingut_pedagogic: null,
@@ -178,7 +178,7 @@ A continuació modela una conversa amb "la Maria" en role-play. S'asseu al costa
   scene_09: {
     id: 'scene_09', etapa: 'Creuament del Primer Llindar', personatge: 'harry',
     tipus: 'text_block', titol: 'La primera sessió de grup',
-    imatge: 'assets/img_04.svg',
+    imatge: 'assets/scene_04.webp',
     narracio: `Tres dies después. Harry haurà de dirigir la primera sessió de grup com a entrenador principal. El grup és divers: la **Maria** (55 anys, mobilitat limitada, molt sensible), en **Jordi** (35 anys, triatleta avançat, molt exigent) i la **Lluïsa** (65 anys, jubilada, cardiopatia lleu, ve per socialitzar tant com per entrenar).
 
 Harry repassa els fulls de cada client. Tres perfils, tres necessitats, tres estils de comunicació. Exactament el tipus de repte que no surten als manuals.`,
@@ -193,7 +193,7 @@ Harry repassa els fulls de cada client. Tres perfils, tres necessitats, tres est
   scene_10: {
     id: 'scene_10', etapa: 'Creuament del Primer Llindar', personatge: 'jack',
     tipus: 'decision_scenario', titol: 'El consell de Jack vs. la Hanna',
-    imatge: 'assets/img_01.svg',
+    imatge: 'assets/scene_01.webp',
     narracio: `Minuts abans de la sessió, en Jack entra a la sala d'entrenadors i li dóna un cop a l'espatlla: "Consell d'amic: sigues ferm des del principi. No els deixis que et dominin amb excuses. Aquí venen a entrenar, no a plorar."
 
 Harry recorda el que li ha dit la Hanna: "Pregunta com es troben. Adapta't. Cada persona és un món." Dues filosofies oposades. El grup espera a la porta.`,
@@ -216,7 +216,7 @@ Harry recorda el que li ha dit la Hanna: "Pregunta com es troben. Adapta't. Cada
   scene_11: {
     id: 'scene_11', etapa: 'Creuament del Primer Llindar', personatge: 'narracio',
     tipus: 'text_block', titol: 'Les conseqüències de la firmesa sense empatia',
-    imatge: 'assets/img_04.svg',
+    imatge: 'assets/scene_06.webp',
     narracio: `Harry entra directe als exercicis sense cap salutació personal. En Jordi creua els braços i observa amb escepticisme. La Lluïsa no s'atreveix a preguntar si pot fer l'exercici amb la seva cardiopatia. La Maria mira el terra.
 
 A mitja sessió, en Jordi interromp: "Espera. El meu programa era diferent." Harry no sap de qui parla —en Jordi és client d'un altre entrenador— i la comunicació es converteix en un malentès públic. La sessió acaba amb tensions.`,
@@ -231,7 +231,7 @@ A mitja sessió, en Jordi interromp: "Espera. El meu programa era diferent." Har
   scene_12: {
     id: 'scene_12', etapa: 'Proves, Aliats i Enemics', personatge: 'jordi',
     tipus: 'text_block', titol: 'La crítica pública d\'en Jordi',
-    imatge: 'assets/img_05.svg',
+    imatge: 'assets/scene_05.webp',
     narracio: `Una setmana después. Harry ha canviat el programa d'en Jordi: ha reduït les sentadilles i ha afegit treball de core específic per al triatlò. Una millora objectivament justificada. Però no l'ha comunicat al client.
 
 En Jordi arriba a la sala, mira el full nou i es gira cap a Harry en veu alta: "Això és el problema. Canvies el que funciona sense dir res a ningú. No em consultes, no m'expliques res, i esperes que confïi en tu?" Tres clients giren el cap.`,
@@ -246,7 +246,7 @@ En Jordi arriba a la sala, mira el full nou i es gira cap a Harry en veu alta: "
   scene_13: {
     id: 'scene_13', etapa: 'Proves, Aliats i Enemics', personatge: 'jordi',
     tipus: 'decision_scenario', titol: 'Com respon Harry a la crítica pública?',
-    imatge: 'assets/img_05.svg',
+    imatge: 'assets/scene_05.webp',
     narracio: `Harry té tres opcions. Tres clients observen. El silenci dura un segon que sembla un minut.`,
     dialeg: null,
     contingut_pedagogic: null,
@@ -272,7 +272,7 @@ En Jordi arriba a la sala, mira el full nou i es gira cap a Harry en veu alta: "
   scene_14: {
     id: 'scene_14', etapa: 'Proves, Aliats i Enemics', personatge: 'hanna',
     tipus: 'quiz', titol: 'Comprensió: assertivitat',
-    imatge: 'assets/img_03.svg',
+    imatge: 'assets/scene_03.webp',
     narracio: `La Hanna et demana que reflexionis sobre el que ha passat.`,
     dialeg: null,
     contingut_pedagogic: null,
@@ -292,7 +292,7 @@ En Jordi arriba a la sala, mira el full nou i es gira cap a Harry en veu alta: "
   scene_15: {
     id: 'scene_15', etapa: 'Aproximació a la Cova', personatge: 'hanna',
     tipus: 'worked_example', titol: 'Preparació de la conversa difícil',
-    imatge: 'assets/img_03.svg',
+    imatge: 'assets/scene_03.webp',
     narracio: `La Hanna agafa Harry del braç just quan surt de la sala. "Bé fet per no escalar. Però ara ve la part difícil: has de tenir la conversa real amb en Jordi. I per tenir una conversa difícil de manera professional, cal preparar-se."
 
 Explica els cinc elements clau: definir l'objectiu, anticipar les emocions de l'altra part, triar el moment i el lloc, preparar una obertura empàtica i planificar l'escolta activa.`,
@@ -311,7 +311,7 @@ Explica els cinc elements clau: definir l'objectiu, anticipar les emocions de l'
   scene_16: {
     id: 'scene_16', etapa: 'Aproximació a la Cova', personatge: 'harry',
     tipus: 'checklist', titol: 'Prepara la conversa amb en Jordi',
-    imatge: 'assets/img_04.svg',
+    imatge: 'assets/scene_04.webp',
     narracio: `Harry s'asseu amb un full en blanc. La Hanna li ha dit que hi ha cinc elements essencials per preparar qualsevol conversa difícil. Marca els que creus que hauries d'incloure en la preparació. Selecciona tots els correctes.`,
     dialeg: { personatge: 'harry', text: '"No és una conversa de cinc minuts. És la conversa que pot canviar com en Jordi em veu com a professional."' },
     contingut_pedagogic: null,
@@ -331,7 +331,7 @@ Explica els cinc elements clau: definir l'objectiu, anticipar les emocions de l'
   scene_17: {
     id: 'scene_17', etapa: 'La Prova Suprema', personatge: 'jordi',
     tipus: 'text_block', titol: 'La conversa: el context',
-    imatge: 'assets/img_05.svg',
+    imatge: 'assets/scene_05.webp',
     narracio: `La sala de reunions petita del costat del despatx de Miquel. Dues cadires, una taula estreta, la porta tancada. Harry ha convocat en Jordi amb un missatge clar: "Vull explicar-te per què he canviat el teu programa i escoltar el que penses. Demà a les 10?"
 
 En Jordi arriba puntual però tens. Es creua de braços nada més seure. Harry respira fons. Ara comença la prova suprema.`,
@@ -346,7 +346,7 @@ En Jordi arriba puntual però tens. Es creua de braços nada més seure. Harry r
   scene_18: {
     id: 'scene_18', etapa: 'La Prova Suprema – Inici', personatge: 'jordi',
     tipus: 'decision_scenario', titol: 'Decisió 1: Com inicia Harry la conversa?',
-    imatge: 'assets/img_05.svg',
+    imatge: 'assets/scene_05.webp',
     narracio: `En Jordi espera. Harry té la paraula. Primer moviment.`,
     dialeg: null,
     contingut_pedagogic: null,
@@ -372,7 +372,7 @@ En Jordi arriba puntual però tens. Es creua de braços nada més seure. Harry r
   scene_19: {
     id: 'scene_19', etapa: 'La Prova Suprema – Tensió', personatge: 'jordi',
     tipus: 'decision_scenario', titol: 'Decisió 2: En Jordi s\'enfada',
-    imatge: 'assets/img_05.svg',
+    imatge: 'assets/scene_05.webp',
     narracio: `En Jordi s\'incorpora: "Em sap molt greu, però no pots canviar el meu programa sense consultar-me. No és professional." La seva veu ha pujat de to. Harry nota la calor a la cara.`,
     dialeg: null,
     contingut_pedagogic: null,
@@ -398,7 +398,7 @@ En Jordi arriba puntual però tens. Es creua de braços nada més seure. Harry r
   scene_20: {
     id: 'scene_20', etapa: 'La Prova Suprema – Resolució', personatge: 'jordi',
     tipus: 'decision_scenario', titol: 'Decisió 3: Arribar a un acord',
-    imatge: 'assets/img_05.svg',
+    imatge: 'assets/scene_05.webp',
     narracio: `En Jordi accepta que el canvi tècnic tenia sentit, però vol ser consultat en el futur. Harry ha de proposar com serà la relació d'ara endavant.`,
     dialeg: null,
     contingut_pedagogic: null,
@@ -428,7 +428,7 @@ En Jordi arriba puntual però tens. Es creua de braços nada més seure. Harry r
   scene_21: {
     id: 'scene_21', etapa: 'La Recompensa', personatge: 'hanna',
     tipus: 'worked_example', titol: 'La confiança guanyada',
-    imatge: 'assets/img_03.svg',
+    imatge: 'assets/scene_03.webp',
     narracio: `En Jordi surt de la sala i li estreny la mà a Harry. Per a en Jordi, que rarament expressa aprovació, és molt significatiu. "Bé, em sembla bé el que has proposat. Continuem."
 
 La Hanna, que havia escoltat des del passadís, s'apropa i diu simplement: "Has crescut deu anys en una hora." Asseguts a la sala, li explica els cinc estils d'afrontament del conflicte i per quin Harry ha optat.`,
@@ -447,7 +447,7 @@ La Hanna, que havia escoltat des del passadís, s'apropa i diu simplement: "Has 
   scene_22: {
     id: 'scene_22', etapa: 'La Recompensa', personatge: 'hanna',
     tipus: 'text_block', titol: 'El conflicte com a oportunitat',
-    imatge: 'assets/img_03.svg',
+    imatge: 'assets/scene_03.webp',
     narracio: `La Hanna li mostra a Harry el que han aconseguit: en Jordi ha passat de desconfiar a proposar millores conjuntes. La queixa de la Maria ha passat a una reunió de revisió del programa on ella participa activament.
 
 "Veus el patró?" li diu la Hanna. "Quan escoltes de veritat, les persones passen de queixar-se a co-crear. El client deixa de ser un problema i es converteix en un aliat."`,
@@ -462,7 +462,7 @@ La Hanna, que havia escoltat des del passadís, s'apropa i diu simplement: "Has 
   scene_23: {
     id: 'scene_23', etapa: 'La Recompensa', personatge: 'hanna',
     tipus: 'quiz', titol: 'Comprensió: estils d\'afrontament',
-    imatge: 'assets/img_03.svg',
+    imatge: 'assets/scene_03.webp',
     narracio: `Comprovem que has entès els cinc estils de Thomas-Kilmann.`,
     dialeg: null,
     contingut_pedagogic: null,
@@ -482,7 +482,7 @@ La Hanna, que havia escoltat des del passadís, s'apropa i diu simplement: "Has 
   scene_24: {
     id: 'scene_24', etapa: 'El Camí de Retorn', personatge: 'miquel',
     tipus: 'text_block', titol: 'La tensió entre Jack i la Neus',
-    imatge: 'assets/img_01.svg',
+    imatge: 'assets/scene_01.webp',
     narracio: `Dues setmanes después. L'ambient al centre ha millorat notablement gràcies a les noves dinàmiques de Harry. Però a la sala d'entrenadors hi ha una tensió creixent: en Jack i la **Neus** (entrenadora de classes col·lectives) porten tres dies sense parlar-se.
 
 En Jack va criticar públicament les classes de ioga de la Neus davant dels clients. La Neus va respondre amb silenci i evitació total. El director Miquel crida Harry: "Tu has demostrat que saps gestionar persones. Pots intervenir com a mediador informal?"`,
@@ -497,7 +497,7 @@ En Jack va criticar públicament les classes de ioga de la Neus davant dels clie
   scene_25: {
     id: 'scene_25', etapa: 'El Camí de Retorn', personatge: 'miquel',
     tipus: 'decision_scenario', titol: 'Mediar o no mediar?',
-    imatge: 'assets/img_01.svg',
+    imatge: 'assets/scene_01.webp',
     narracio: `Harry té l'oportunitat d'intervenir. Però intervenint s'arrisca a equivocar-se. No intervenint, permet que el conflicte segueixi el seu curs.`,
     dialeg: null,
     contingut_pedagogic: null,
@@ -518,7 +518,7 @@ En Jack va criticar públicament les classes de ioga de la Neus davant dels clie
   scene_26: {
     id: 'scene_26', etapa: 'El Camí de Retorn', personatge: 'harry',
     tipus: 'text_block', titol: 'La mediació: el procés',
-    imatge: 'assets/img_05.svg',
+    imatge: 'assets/scene_05.webp',
     narracio: `Harry parla primer a soles amb en Jack. Escolta sense jutjar, reformula, i li pregunta: "Entens per qué la Neus se sent atacada?" En Jack, sorprès, diu que no havia pensat en com l'afectaria.
 
 Llavors parla amb la Neus. Li explica que en Jack no era conscient de l'impacte de les seves paraules. Li demana: "Estairies disposada a tenir una conversa estructurada on tots dos puguin expressar el que necessiten?" La Neus accepta.`,
@@ -533,7 +533,7 @@ Llavors parla amb la Neus. Li explica que en Jack no era conscient de l'impacte 
   scene_26b: {
     id: 'scene_26b', etapa: 'El Camí de Retorn', personatge: 'narracio',
     tipus: 'text_block', titol: 'El conflicte escala',
-    imatge: 'assets/img_01.svg',
+    imatge: 'assets/scene_01.webp',
     narracio: `Harry decideix no intervenir. Una setmana después, durant una sessió que les dues zones comparteixen, en Jack puja el volum de la música al màxim mentre la Neus explica un exercici de respiració. La Neus perd la compostura i li diu en veu alta que és un maleducat.
 
 Tres clients ho veuen. Dos demanen parlar amb el director. Miquel mira Harry: "Quan et vaig dir que tenies l'oportunitat d'intervenir, ho deia en serio."`,
@@ -548,7 +548,7 @@ Tres clients ho veuen. Dos demanen parlar amb el director. Miquel mira Harry: "Q
   scene_27: {
     id: 'scene_27', etapa: 'La Resurrecció', personatge: 'miquel',
     tipus: 'text_block', titol: 'El director demana la opinió sobre Jack',
-    imatge: 'assets/img_05.svg',
+    imatge: 'assets/scene_05.webp',
     narracio: `Una setmana después. Les enquestes de satisfacció revelen que tres clients esmenten "un cert entrenador" que els ha fet sentir menyspreats. Miquel sap que és en Jack.
 
 Cita Harry a soles al despatx: "He de prendre una decisió difícil sobre en Jack. Pots donar-me la teva opinió professional i honesta? No la que creus que vull sentir."`,
@@ -563,7 +563,7 @@ Cita Harry a soles al despatx: "He de prendre una decisió difícil sobre en Jac
   scene_28: {
     id: 'scene_28', etapa: 'La Resurrecció', personatge: 'miquel',
     tipus: 'decision_scenario', titol: 'Quin estil comunicatiu usa Harry?',
-    imatge: 'assets/img_05.svg',
+    imatge: 'assets/scene_05.webp',
     narracio: `Harry té la paraula. Miquel espera la seva opinió honesta sobre en Jack.`,
     dialeg: null,
     contingut_pedagogic: null,
@@ -589,7 +589,7 @@ Cita Harry a soles al despatx: "He de prendre una decisió difícil sobre en Jac
   scene_29: {
     id: 'scene_29', etapa: 'El Retorn amb l\'Elixir', personatge: 'harry',
     tipus: 'checklist', titol: 'El decàleg de comunicació de FitCore',
-    imatge: 'assets/img_04.svg',
+    imatge: 'assets/scene_04.webp',
     narracio: `Tres setmanes más tard. En Jack ha acceptat formació en habilitats comunicatives. La Neus i en Jack han tingut una conversa mediada que ha estat difícil però productiva. El director proposa que Harry dirigeixi reunions mensuals de comunicació interna.
 
 Harry prepara el **decàleg de bones pràctiques comunicatives de FitCore**. Marca tots els principis que creus que haurien de formar-ne part.`,
@@ -624,7 +624,7 @@ Harry prepara el **decàleg de bones pràctiques comunicatives de FitCore**. Mar
   scene_30: {
     id: 'scene_30', etapa: 'Epíleg: El Nou Harry', personatge: 'hanna',
     tipus: 'epilogue', titol: 'El Retorn amb l\'Elixir',
-    imatge: 'assets/img_01.svg',
+    imatge: 'assets/scene_01.webp',
     narracio: `Sis setmanes des del primer dia. FitCore, sala de pesos, set del matí.
 
 La Hanna li ha deixat una nota al taquiller: "L'heroi no és el qui no cau. És el qui aprèn cada vegada que es reincorpora."`,

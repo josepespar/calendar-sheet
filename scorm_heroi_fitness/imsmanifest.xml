@@ -24,11 +24,12 @@
       <file href="css/style.css"/>
       <file href="js/scorm.js"/>
       <file href="js/scenario.js"/>
-      <file href="assets/img_01.svg"/>
-      <file href="assets/img_02.svg"/>
-      <file href="assets/img_03.svg"/>
-      <file href="assets/img_04.svg"/>
-      <file href="assets/img_05.svg"/>
+      <file href="assets/scene_01.webp"/>
+      <file href="assets/scene_02.webp"/>
+      <file href="assets/scene_03.webp"/>
+      <file href="assets/scene_04.webp"/>
+      <file href="assets/scene_05.webp"/>
+      <file href="assets/scene_06.webp"/>
     </resource>
   </resources>
 </manifest>

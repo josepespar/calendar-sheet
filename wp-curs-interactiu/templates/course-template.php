@@ -1,0 +1,69 @@
+<div class="ci-wrapper">
+
+  <div id="app">
+
+    <!-- HEADER -->
+    <header id="header">
+      <div id="header-row1">
+        <div id="header-left">
+          <span id="stage-label">Cargando…</span>
+          <span id="scene-title"></span>
+        </div>
+        <div id="header-right">
+          <span id="score-display">0 pts</span>
+          <button id="map-toggle-btn"
+            onclick="document.getElementById('map-overlay').style.display='flex'">Mapa ›</button>
+        </div>
+      </div>
+      <div id="progress-container">
+        <div id="progress-bar-track"><div id="progress-bar-fill"></div></div>
+        <span id="progress-label">0/28</span>
+      </div>
+    </header>
+
+    <!-- SCENE AREA -->
+    <main id="scene-area">
+      <div id="scene-image-container" style="display:none">
+        <img id="scene-image" alt="" loading="eager"/>
+      </div>
+      <div id="character-block">
+        <div id="character-avatar"></div>
+        <span id="character-name"></span>
+      </div>
+      <div id="narrative-text"></div>
+      <div id="dialogue-box" style="display:none">
+        <span id="dialogue-char-name"></span>
+        <div id="dialogue-text"></div>
+      </div>
+      <div id="pedagogic-block" style="display:none">
+        <span id="pedagogic-title"></span>
+        <div id="pedagogic-text"></div>
+      </div>
+      <div id="interaction-area"></div>
+    </main>
+
+  </div><!-- /app -->
+
+  <!-- FEEDBACK OVERLAY -->
+  <div id="feedback-overlay">
+    <div id="feedback-modal">
+      <div id="feedback-icon" class="feedback-icon"></div>
+      <div id="feedback-pts"></div>
+      <div id="feedback-text"></div>
+      <button id="feedback-continue" class="btn btn-primary btn-enabled">Continuar →</button>
+    </div>
+  </div>
+
+  <!-- JOURNEY MAP OVERLAY -->
+  <div id="map-overlay">
+    <div id="map-modal">
+      <div id="map-modal-header">
+        <span id="map-modal-title">Mapa del aprendizaje</span>
+        <button id="map-close-btn"
+          onclick="document.getElementById('map-overlay').style.display='none'">✕</button>
+      </div>
+      <div id="journey-map-content"></div>
+    </div>
+  </div>
+
+</div><!-- /ci-wrapper -->

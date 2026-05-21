@@ -70,6 +70,7 @@ const scenes = {
 
   scene_01: {
     id: 'scene_01',
+    imatge: 'https://raw.githubusercontent.com/josepespar/scorm_control_motor-img-/main/raquel_escena_01.webp',
     tipus: 'text_block',
     titol: 'Arribar al VII Seminari Internacional',
     personatge: 'pau',
@@ -83,6 +84,7 @@ const scenes = {
 
   scene_02: {
     id: 'scene_02',
+    imatge: 'https://raw.githubusercontent.com/josepespar/scorm_control_motor-img-/main/raquel_escena_02.webp',
     tipus: 'text_block',
     titol: 'La Definició Provocadora',
     personatge: 'raquel',
@@ -96,6 +98,7 @@ const scenes = {
 
   scene_03: {
     id: 'scene_03',
+    imatge: 'https://raw.githubusercontent.com/josepespar/scorm_control_motor-img-/main/raquel_escena_03.webp',
     tipus: 'text_block',
     titol: 'Tres Grans Perspectives Teòriques',
     personatge: 'raquel',
@@ -109,6 +112,7 @@ const scenes = {
 
   scene_04: {
     id: 'scene_04',
+    imatge: 'https://raw.githubusercontent.com/josepespar/scorm_control_motor-img-/main/raquel_escena_04.webp',
     tipus: 'quiz',
     titol: 'Comprensió: Definició de Control Motor',
     personatge: 'raquel',
@@ -140,6 +144,7 @@ const scenes = {
 
   scene_05: {
     id: 'scene_05',
+    imatge: 'https://raw.githubusercontent.com/josepespar/scorm_control_motor-img-/main/raquel_escena_05.webp',
     tipus: 'text_block',
     titol: 'La Taula Rodona Comença',
     personatge: 'narracio',
@@ -157,6 +162,7 @@ const scenes = {
 
   scene_06: {
     id: 'scene_06',
+    imatge: 'https://raw.githubusercontent.com/josepespar/scorm_control_motor-img-/main/raquel_escena_06.webp',
     tipus: 'text_block',
     titol: 'La Perspectiva Ecològica',
     personatge: 'joan',
@@ -174,6 +180,7 @@ const scenes = {
 
   scene_07: {
     id: 'scene_07',
+    imatge: 'https://raw.githubusercontent.com/josepespar/scorm_control_motor-img-/main/raquel_escena_07.webp',
     tipus: 'text_block',
     titol: 'La Perspectiva de l\'Entrenador de Muntanya',
     personatge: 'andres',
@@ -187,6 +194,7 @@ const scenes = {
 
   scene_08: {
     id: 'scene_08',
+    imatge: 'https://raw.githubusercontent.com/josepespar/scorm_control_motor-img-/main/raquel_escena_08.webp',
     tipus: 'text_block',
     titol: 'La Perspectiva de l\'Atleta',
     personatge: 'esther',
@@ -204,6 +212,7 @@ const scenes = {
 
   scene_09: {
     id: 'scene_09',
+    imatge: 'https://raw.githubusercontent.com/josepespar/scorm_control_motor-img-/main/raquel_escena_09.webp',
     tipus: 'quiz',
     titol: 'Comprensió: La Perspectiva Ecològica',
     personatge: 'joan',
@@ -235,6 +244,7 @@ const scenes = {
 
   scene_10: {
     id: 'scene_10',
+    imatge: 'https://raw.githubusercontent.com/josepespar/scorm_control_motor-img-/main/raquel_escena_10.webp',
     tipus: 'quiz',
     titol: 'Comprensió: La Visió d\'Andrés',
     personatge: 'andres',
@@ -270,6 +280,7 @@ const scenes = {
 
   scene_11: {
     id: 'scene_11',
+    imatge: 'https://raw.githubusercontent.com/josepespar/scorm_control_motor-img-/main/raquel_escena_11.webp',
     tipus: 'text_block',
     titol: 'La Biologia com a Precondició',
     personatge: 'joan',
@@ -283,6 +294,7 @@ const scenes = {
 
   scene_12: {
     id: 'scene_12',
+    imatge: 'https://raw.githubusercontent.com/josepespar/scorm_control_motor-img-/main/raquel_escena_12.webp',
     tipus: 'text_block',
     titol: 'L\'Exploració com a Clau de l\'Aprenentatge',
     personatge: 'joan',
@@ -300,6 +312,7 @@ const scenes = {
 
   scene_13: {
     id: 'scene_13',
+    imatge: 'https://raw.githubusercontent.com/josepespar/scorm_control_motor-img-/main/raquel_escena_13.webp',
     tipus: 'quiz',
     titol: 'Comprensió: El Rol de la Biologia',
     personatge: 'joan',
@@ -331,6 +344,7 @@ const scenes = {
 
   scene_14: {
     id: 'scene_14',
+    imatge: 'https://raw.githubusercontent.com/josepespar/scorm_control_motor-img-/main/raquel_escena_14.webp',
     tipus: 'text_block',
     titol: 'Competició: Quan el Context Ho Canvia Tot',
     personatge: 'esther',
@@ -344,6 +358,7 @@ const scenes = {
 
   scene_15: {
     id: 'scene_15',
+    imatge: 'https://raw.githubusercontent.com/josepespar/scorm_control_motor-img-/main/raquel_escena_15.webp',
     tipus: 'checklist',
     titol: 'Biologia, Experiència, Context: Conceptes Clau',
     personatge: 'raquel',
@@ -368,6 +383,7 @@ const scenes = {
 
   scene_16: {
     id: 'scene_16',
+    imatge: 'https://raw.githubusercontent.com/josepespar/scorm_control_motor-img-/main/raquel_escena_16.webp',
     tipus: 'text_block',
     titol: 'Què Aprenem Quan Treballem el Control Motor?',
     personatge: 'esther',
@@ -381,6 +397,7 @@ const scenes = {
 
   scene_17: {
     id: 'scene_17',
+    imatge: 'https://raw.githubusercontent.com/josepespar/scorm_control_motor-img-/main/raquel_escena_17.webp',
     tipus: 'quiz',
     titol: 'Comprensió: Aprendre sobre el Propi Cos',
     personatge: 'esther',
@@ -412,6 +429,7 @@ const scenes = {
 
   scene_18: {
     id: 'scene_18',
+    imatge: 'https://raw.githubusercontent.com/josepespar/scorm_control_motor-img-/main/raquel_escena_18.webp',
     tipus: 'text_block',
     titol: 'El Repte de Joan: ¿S\'Aprèn Realment?',
     personatge: 'joan',
@@ -429,6 +447,7 @@ const scenes = {
 
   scene_19: {
     id: 'scene_19',
+    imatge: 'https://raw.githubusercontent.com/josepespar/scorm_control_motor-img-/main/raquel_escena_19.webp',
     tipus: 'quiz',
     titol: 'El Repte de Joan sobre la Consciència',
     personatge: 'joan',
@@ -460,6 +479,7 @@ const scenes = {
 
   scene_20: {
     id: 'scene_20',
+    imatge: 'https://raw.githubusercontent.com/josepespar/scorm_control_motor-img-/main/raquel_escena_20.webp',
     tipus: 'text_block',
     titol: 'Testicles, Feedback i Sensacions',
     personatge: 'andres',
@@ -477,6 +497,7 @@ const scenes = {
 
   scene_21: {
     id: 'scene_21',
+    imatge: 'https://raw.githubusercontent.com/josepespar/scorm_control_motor-img-/main/raquel_escena_21.webp',
     tipus: 'text_block',
     titol: 'Mesurar el Control Motor',
     personatge: 'esther',
@@ -490,6 +511,7 @@ const scenes = {
 
   scene_22: {
     id: 'scene_22',
+    imatge: 'https://raw.githubusercontent.com/josepespar/scorm_control_motor-img-/main/raquel_escena_22.webp',
     tipus: 'quiz',
     titol: 'Comprensió: Mesurar el Control Motor',
     personatge: 'esther',
@@ -521,6 +543,7 @@ const scenes = {
 
   scene_23: {
     id: 'scene_23',
+    imatge: 'https://raw.githubusercontent.com/josepespar/scorm_control_motor-img-/main/raquel_escena_23.webp',
     tipus: 'text_block',
     titol: 'Com Planificar: La Darrera Pregunta',
     personatge: 'raquel',
@@ -538,6 +561,7 @@ const scenes = {
 
   scene_24: {
     id: 'scene_24',
+    imatge: 'https://raw.githubusercontent.com/josepespar/scorm_control_motor-img-/main/raquel_escena_24.webp',
     tipus: 'decisio',
     titol: 'La Decisió: Per On Comencem?',
     personatge: 'pau',
@@ -576,6 +600,7 @@ const scenes = {
 
   scene_24b: {
     id: 'scene_24b',
+    imatge: 'https://raw.githubusercontent.com/josepespar/scorm_control_motor-img-/main/raquel_escena_25.webp',
     tipus: 'text_block',
     titol: 'La Correcció d\'Andrés',
     personatge: 'andres',
@@ -589,6 +614,7 @@ const scenes = {
 
   scene_25: {
     id: 'scene_25',
+    imatge: 'https://raw.githubusercontent.com/josepespar/scorm_control_motor-img-/main/raquel_escena_26.webp',
     tipus: 'text_block',
     titol: 'El Procés Complet de Planificació',
     personatge: 'andres',
@@ -606,6 +632,7 @@ const scenes = {
 
   scene_26: {
     id: 'scene_26',
+    imatge: 'https://raw.githubusercontent.com/josepespar/scorm_control_motor-img-/main/raquel_escena_27.webp',
     tipus: 'checklist',
     titol: 'Claus per Planificar el Control Motor',
     personatge: 'raquel',
@@ -626,6 +653,7 @@ const scenes = {
 
   scene_27: {
     id: 'scene_27',
+    imatge: 'https://raw.githubusercontent.com/josepespar/scorm_control_motor-img-/main/raquel_escena_28.webp',
     tipus: 'epilog',
     titol: 'Síntesi Final – Resultats',
     personatge: 'raquel',
@@ -641,6 +669,7 @@ const scenes = {
 
   scene_28: {
     id: 'scene_28',
+    imatge: 'https://raw.githubusercontent.com/josepespar/scorm_control_motor-img-/main/raquel_escena_29.webp',
     tipus: 'text_block',
     titol: 'La Mirada Crítica de l\'Entrenador',
     personatge: 'narracio',
